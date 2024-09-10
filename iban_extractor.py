@@ -10,7 +10,7 @@ credentials = service_account.Credentials.from_service_account_file(
 # Inicializa el cliente de Document AI
 project_id = 'dh-central-ta-qa'  # Reemplaza con tu ID de proyecto
 location = 'us'  # Reemplaza con tu ubicación de procesador
-processor_id = '469561897fae299a'  # Reemplaza con el ID de tu procesador
+processor_id = ''  # Reemplaza con el ID de tu procesador
 
 def process_document(file_path):
     client = documentai.DocumentProcessorServiceClient(credentials=credentials)
