@@ -108,7 +108,7 @@ Make sure that the service account JSON file (client_secrets.json) is saved at t
 
 5.  **Run the Script**:
 
-Execute the script using the following command:This will process the files in the input folder, extract the required information, and save the results to an Excel file (Results1000.xlsx).
+Execute the script using the following command:This will process the files in the input folder, extract the required information, and save the results to an Excel file ([your_name].xlsx).
 
 **Script Parameters**
 
@@ -134,9 +134,9 @@ Execute the script using the following command:This will process the files in th
 
 *Excel File*:
 
-After processing, an Excel file named Results1000.xlsx will be generated at /Users/bernat.morros/Desktop/Salesforce Migration/.
+After processing, an Excel file named [your_name].xlsx will be generated at /Users/bernat.morros/Desktop/Salesforce Migration/.
 
--  Columns in the Excel file:
+Columns in the Excel file:
 
 -  Filename: The name of the processed file.
 
