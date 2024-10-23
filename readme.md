@@ -12,7 +12,11 @@ This script is designed to process documents, extracting key information such as
 
 -  **File Conversion**: Converts .jfif files to .jpg before processing.
 
+-  **PNG Support**: Added support for .png file types.
+
 -  **File Management**: Moves successfully processed files to a separate folder.
+
+-  **Progress Tracking**: Displays real-time progress of files processed in the terminal.
 
 **Prerequisites**
 
@@ -98,11 +102,11 @@ Alternatively, use the individual package installation command shown above.
 
 3.  **Place the Credentials File**:
 
-Make sure that the service account JSON file (client_secrets.json) is saved at the path specified in the script (/Users/bernat.morros/Desktop/Salesforce Migration/client_secrets.json). Update the script if your credentials file is in a different location.
+Make sure that the service account JSON file (client_secrets.json) is saved at the path specified in the script (/Users/[your_user]/Desktop/Salesforce Migration/client_secrets.json). Update the script if your credentials file is in a different location.
 
 4.  **Organize Your Input Files**:
 
--  Place the documents you wish to process in the folder /Users/bernat.morros/Desktop/Salesforce Migration/test.
+-  Place the documents you wish to process in the folder /Users/[your_user]/Desktop/Salesforce Migration/test.
 
 -  Ensure that the documents are in .pdf, .jpg, .jpeg, .png, or .jfif formats.
 
@@ -117,6 +121,8 @@ Execute the script using the following command:This will process the files in th
 -  folder_path: Set to the location containing the files to be processed (/Users/bernat.morros/Desktop/Salesforce Migration/test).
 
 -  processed_folder: Set to the location where successfully processed files will be moved (/Users/bernat.morros/Desktop/Salesforce Migration/test_processed_images).
+
+-  failed_folder: Set to the location where files that fail processing will be moved (/Users/bernat.morros/Desktop/Salesforce Migration/failed_images_partners).
 
 2.  **Max Files to Process**:
 
@@ -148,6 +154,8 @@ Columns in the Excel file:
 
 - **Processed Files**: Files that were successfully processed will be moved to the processed_folder.
 
+- Successfully processed files will be moved to the processed_folder.
+- Files that encounter errors during processing will be moved to the failed_folder.
 
 **Error Handling**
 
